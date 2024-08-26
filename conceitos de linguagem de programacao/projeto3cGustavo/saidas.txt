@@ -1,0 +1,128 @@
+1-  expr([20,/,'(',2,+,3,')',-,4], X).
+2-  expr([6,*,3,-,2,+,1], X).
+3-  expr(['(',7,/,1,')',*,2,+,8], X).
+4-  expr([3,+,5,-,6,/,2], X).
+5-  expr([10,+,4,*,'(',2,/,1,')'], X).
+6-  expr(['(',8,+,2,')',*,'(',3,-,1,')'], X).
+7-  expr([9,/,'(',3,-,1,')',+,5], X).
+8-  expr([2,*,3,+,4,/,2], X).
+9-  expr([7,-,'(',1,+,2,')',*,4], X).
+10- expr([5,+,6,*,2,/,3], X).
+11- expr([9,+,10,*,'(',2,+,3,')'], X).
+
+** O número de cada saída é o código da expressão equivalente acima.**
+
+**Saída de G2**
+
+1-  V = 0,  X = []
+2-  V = 15, X = []
+3-  V = 22, X = []
+4-  V = 5,  X = []
+5-  V = 18, X = []
+6-  V = 20, X = []
+7-  V = 9.5,X = []
+8-  V = 8,  X = []
+9-  V = -5, X = []
+10- V = 9.0,X = []
+11- V = 59, X = []
+
+**Saída para G3**
+
+1-  PUSH(20)
+    PUSH(2)
+    PUSH(3)
+    y=POP(); x=POP(); PUSH(x ADD y)
+    y=POP(); x=POP(); PUSH(x DIV y)
+    PUSH(4)
+    y=POP(); x=POP(); PUSH(x SUB y)
+    X = []
+
+2-  PUSH(6)
+    PUSH(3)
+    y=POP(); x=POP(); PUSH(x MUL y)
+    PUSH(2)
+    PUSH(1)
+    y=POP(); x=POP(); PUSH(x ADD y)
+    y=POP(); x=POP(); PUSH(x SUB y)
+    X = []
+
+3-  PUSH(7)
+    PUSH(1)
+    y=POP(); x=POP(); PUSH(x DIV y)
+    PUSH(2)
+    y=POP(); x=POP(); PUSH(x MUL y)
+    PUSH(8)
+    y=POP(); x=POP(); PUSH(x ADD y)
+    X = []
+    
+4-  PUSH(3)
+    PUSH(5)
+    PUSH(6)
+    PUSH(2)
+    y=POP(); x=POP(); PUSH(x DIV y)
+    y=POP(); x=POP(); PUSH(x SUB y)
+    y=POP(); x=POP(); PUSH(x ADD y)
+    X = []
+
+5-  PUSH(10)
+    PUSH(4)
+    PUSH(2)
+    PUSH(1)
+    y=POP(); x=POP(); PUSH(x DIV y)
+    y=POP(); x=POP(); PUSH(x MUL y)
+    y=POP(); x=POP(); PUSH(x ADD y)
+    X = []
+
+6-  PUSH(8)
+    PUSH(2)
+    y=POP(); x=POP(); PUSH(x ADD y)
+    PUSH(3)
+    PUSH(1)
+    y=POP(); x=POP(); PUSH(x SUB y)
+    y=POP(); x=POP(); PUSH(x MUL y)
+    X = []
+
+7-  PUSH(9)
+    PUSH(3)
+    PUSH(1)
+    y=POP(); x=POP(); PUSH(x SUB y)
+    y=POP(); x=POP(); PUSH(x DIV y)
+    PUSH(5)
+    y=POP(); x=POP(); PUSH(x ADD y)
+    X = []
+
+8-  PUSH(2)
+    PUSH(3)
+    y=POP(); x=POP(); PUSH(x MUL y)
+    PUSH(4)
+    PUSH(2)
+    y=POP(); x=POP(); PUSH(x DIV y)
+    y=POP(); x=POP(); PUSH(x ADD y)
+    X = []
+
+9-  PUSH(7)
+    PUSH(1)
+    PUSH(2)
+    y=POP(); x=POP(); PUSH(x ADD y)
+    PUSH(4)
+    y=POP(); x=POP(); PUSH(x MUL y)
+    y=POP(); x=POP(); PUSH(x SUB y)
+    X = []
+
+10- PUSH(5)
+    PUSH(6)
+    PUSH(2)
+    PUSH(3)
+    y=POP(); x=POP(); PUSH(x DIV y)
+    y=POP(); x=POP(); PUSH(x MUL y)
+    y=POP(); x=POP(); PUSH(x ADD y)
+    X = []
+
+11- PUSH(9)
+    PUSH(10)
+    PUSH(2)
+    PUSH(3)
+    y=POP(); x=POP(); PUSH(x ADD y)
+    y=POP(); x=POP(); PUSH(x MUL y)
+    y=POP(); x=POP(); PUSH(x ADD y)
+    X = []

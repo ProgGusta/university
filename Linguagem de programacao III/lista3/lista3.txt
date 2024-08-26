@@ -1,0 +1,282 @@
+Atividade - lista 3 -> modelos
+
+Q1)
+1- //modelo lampada
+2- inicio
+3- dado tipo_lampada, marca, preço;
+4- 
+5- isFunciona()
+6- {
+7-	 se lampada funciona:
+8-		return true
+9-	 se nao:
+10-		return false
+11- }
+12-
+13- ValidaCompra()
+14- {
+15- 	se compra confirmada:
+16- 		return true;
+17- }
+
+Q2)
+1- //modelo lampada
+2- inicio
+3- dado estado_lampada;
+4-
+5- operação meia_luz()
+6- {
+7- 		estado da lmapada = aceso * 0,5;
+8- }
+9- 
+10- //outras operações são iguais as passadas na questão
+
+Q3)
+1- //Modelo lampada
+2- inicio 
+3- dado estado_lampada;
+4-
+5- operação luminosidade(input)
+6- {
+7-		se input >= 0 && input <= 100:
+8-			estado_lampada = input
+9- }
+
+
+Q4)
+1- //operação estado da lampada
+2- dado isLigado = true;
+3- 
+4- operação lig_des(estado_lampada)
+5- {
+6-		se estado_lampada = aceso:
+7- 			isLigado = true
+8-		se nao: 
+9-			isLigado = false
+10 }			
+
+Q5) 
+1-operação abreConta(Nome, deposito, especial)
+2-{
+3-   Nome_do_correntista = Nome;
+4-
+5-   se deposito < 0:
+6-     saldo = 0.00;
+7-   se nao:
+8-     saldo = deposito;
+9-   
+10-  Conta_é_especial = especial;
+11-}
+
+Q6)
+1-operação abreContaSimples(Nome)
+2-{
+3-  Nome_do_correntista = Nome;
+4-  
+5-  se saldo < 0:
+6-     alert ("Seu saldo está negativo");
+7- 
+8-  conta_é_especial = false;
+9-}
+
+Q7)
+1- // Hora precisa
+2- dado hora, min;
+3- 
+4- operação isvalidation(hora, min)
+5- {
+6-    se hora >= 0 && hora <= 24 && min >= 0 && min <= 60:
+7-       return true;
+8-    se não:
+9-       return false;
+10- }
+11-
+12- operação inicializaData(hora, min)
+13- {
+14-    se ( isvalidation(hora, min) ):
+15-       this.hora = hora;
+16-       this.min = min;
+17-    se não:
+18-       this.hora = 0;
+19-       this.min = 0;
+20- }
+21-
+22- operação mostraHora(hora, min)
+23- {
+24-    print ("hora: " + hora + ", min: " + min);
+25- }
+
+Q8)
+1- //Modelo hora precisa
+2- dado hora, min, Segundo, centesimo
+3- 
+4- operação isvalidation(hora, min, Segundo, centesimo)
+5- {
+6-    se hora >= 0 && <= 24 and min >= 0 && <= 60 and Segundo >= 0 && <= 60 and centesimo >= 0 && <= 1:
+7-       return true;
+8-    se não:
+9-       return false;
+10-}
+11-
+12- operação inicializaHora(hora, min, Segundo, centesimo)
+13-{ 
+14-  se ( isvalidation(hora, min, Segundo, centesimo) ):
+15-     this.hora = hora;
+16-     this.min = min;
+17-     this.segundo = Segundo;
+18-     this.centesimo = centesimo;
+19-  se não:
+20-     this.hora = 0;
+21-     this.min = 0;
+22-     this.segundo = 0;
+23-     this.centesimo = 0;
+24-}
+25-
+26- operação mostraHora(hora, min, Segundo, centesimo)
+27- {
+28-    print(hora + ":" + min ":" + Segundo + ":" centesimo);
+29- }
+
+Q9)
+1- //modelo livro
+2- dado genero, titulo, ISBN, pag;
+
+Q10)
+1- //modelo livro de livraria
+2- dado genero, titulo, ISBN, preço;
+3-
+4- operação compra(preço)
+5- {
+6-      se dinheiro == preço:
+7-          return true;
+8-      se não:
+9-          return false;    
+10-}
+11-
+12- operação troca(titulo)
+13- {
+14-     return troca;    
+15- }
+
+
+Q11)
+1- // modelo livro de biblioteca
+2- dado genero, titulo, ISBN, aluguel, prazo
+3- 
+4- operação alugar(prazo)
+5- {
+6-      return aluguel;
+7- }
+8-
+9- operação leitura()
+10-{
+11-     if pagAtual == pagFinal:
+12-         return livro;
+13-}
+14-
+15- operação isDevolution(prazo)
+16- {
+17-     se livro devolvido:
+18-         true;
+19-     se não:
+20-         false;
+21-}
+22-
+-> a diferença está que na biblioteca tem a operação de leitura no local e a operação de aluguel, compra depende de cada biblioteca.
+
+Q12)
+1- //operação ponto 2D
+2- dado x, y;
+3-
+4-operação inserePonto(x, y)
+5-{
+6-    this.x = x;
+7-    this.y = y;
+8-}
+9-
+10-operaçao visualizaGrafico(x, y)
+11-{
+12-        plot Grafico(x, y)
+13-}
+
+Q13)
+1- //modelo linha
+2- dado x, x', linha;
+3-
+4-operação inserePontos(x, x')
+5-{
+6-    this.x = x;
+7-    this.x' = x';
+8-}
+9-
+10-operação conectaPontos(x, x')
+11-{
+12-     linha = conect x && x';    
+13-}
+
+Q14)
+1- //retangulo
+2- dado x, y, opostX, opostY;
+3-
+4- operação pontoOposto(x, y)
+5-{
+6-     this.x = x;
+7-     this.y = y;
+8-     opostX = -x;
+9-     opostY = -y;    
+10-}
+11- 
+12-operação conectaPontos(x, y, opostX, opostY)
+13-{
+14-     retangulo = conect_vertices x && y && opostX && opostY;
+15-}
+
+Q15)
+1- //operação data é válida
+2-operação isvalidation(dia, mes ano)
+3-{   
+4-   se ano % 4 == 0:
+5-      se mes == 2:
+6-          se dia <= 29:
+7-              this.dia = dia;
+8-              this.mes = mes;
+9-              this.ano = ano;
+10-         se não:
+11-             alert("data inválida");
+12-     se mes == 4 || mes == 6 || mes == 9 || mes == 11:
+13-         se dia <= 30:
+14-             this.dia = dia;
+15-             this.mes = mes;
+16-             this.ano = ano;
+17-         se não:
+18-             alert("data inválida");
+19-     se não:
+20-         se dia <= 31:
+21-             this.dia = dia;
+22-             this.mes = mes;
+23-             this.ano = ano;
+24-         se não:
+25-             alert("data inválida");
+26-  se não:
+27-     se mes == 2:
+28-         se dia <= 28:
+29-             this.dia = dia;
+30-             this.mes = mes;
+31-             this.ano = ano;
+32-         se não:
+33-             alert("data inválida");
+34-     se mes == 4 || mes == 6 || mes == 9 || mes == 11:
+35-         se dia <= 30:
+36-             this.dia = dia;
+37-             this.mes = mes;
+38-             this.ano = ano;
+39-         se não:
+40-             alert("data inválida");
+41-     se não:
+42-         se dia <= 31:
+43-             this.dia = dia;
+44-             this.mes = mes;
+45-             this.ano = ano;
+46-         se não:
+47-             alert("data inválida");
+48-}

@@ -1,0 +1,125 @@
+Next token is: 11, Next lexeme is xyz
+Next token is: -2, Next lexeme is ;
+Arvore de analise:
+|-- EXPR
+   |-- TERM
+      |-- FACTOR
+         |-- id
+
+
+Lista de producoes: 
+ p1  p4  p7 
+
+================Expressao aceita================
+
+Next token is: 10, Next lexeme is 1357
+Next token is: -2, Next lexeme is ;
+Arvore de analise:
+|-- EXPR
+   |-- TERM
+      |-- FACTOR
+         |-- int_constant
+
+
+Lista de producoes:
+ p1  p4  p8
+
+================Expressao aceita================
+
+Next token is: 10, Next lexeme is 1
+Next token is: 21, Next lexeme is +
+Next token is: 25, Next lexeme is (
+Next token is: 10, Next lexeme is 3
+Next token is: 23, Next lexeme is *
+Next token is: 10, Next lexeme is 5
+Next token is: 26, Next lexeme is )
+Next token is: -2, Next lexeme is ;
+Arvore de analise:
+|-- EXPR
+   |-- TERM
+      |-- FACTOR
+         |-- int_constant
+   |-- +
+   |-- TERM
+      |-- FACTOR
+         |-- (
+         |-- EXPR
+            |-- TERM
+               |-- FACTOR
+                  |-- int_constant
+               |-- *
+               |-- FACTOR
+                  |-- int_constant
+         |-- )
+
+
+Lista de producoes:
+ p2  p4  p8  p4  p9  p1  p5  p8  p8
+
+================Expressao aceita================
+
+Next token is: 25, Next lexeme is (
+Next token is: 10, Next lexeme is 5
+Next token is: 21, Next lexeme is +
+Next token is: 10, Next lexeme is 7
+Next token is: 26, Next lexeme is )
+Next token is: 21, Next lexeme is +
+Next token is: 25, Next lexeme is (
+Next token is: 10, Next lexeme is 9
+Next token is: 24, Next lexeme is /
+Next token is: 10, Next lexeme is 11
+Next token is: 26, Next lexeme is )
+Next token is: -2, Next lexeme is ;
+Arvore de analise:
+|-- EXPR
+   |-- TERM
+      |-- FACTOR
+         |-- (
+         |-- EXPR
+            |-- TERM
+               |-- FACTOR
+                  |-- int_constant
+            |-- +
+            |-- TERM
+               |-- FACTOR
+                  |-- int_constant
+         |-- )
+   |-- +
+   |-- TERM
+      |-- FACTOR
+         |-- (
+         |-- EXPR
+            |-- TERM
+               |-- FACTOR
+                  |-- int_constant
+               |-- /
+               |-- FACTOR
+                  |-- int_constant
+         |-- )
+
+
+Lista de producoes:
+ p2  p4  p9  p2  p4  p8  p4  p8  p4  p9  p1  p6  p8  p8
+
+================Expressao aceita================
+
+Next token is: 25, Next lexeme is (
+Next token is: 10, Next lexeme is 8642
+Next token is: 26, Next lexeme is )
+Next token is: -1, Next lexeme is EOF
+Arvore de analise:
+|-- EXPR
+   |-- TERM
+      |-- FACTOR
+         |-- (
+         |-- EXPR
+            |-- TERM
+               |-- FACTOR
+                  |-- int_constant
+         |-- )
+
+
+Lista de producoes:
+ p1  p4  p9  p1  p4  p8
+
+================Expressao aceita================

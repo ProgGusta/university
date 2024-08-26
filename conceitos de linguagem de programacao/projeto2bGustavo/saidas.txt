@@ -1,0 +1,126 @@
+| i  | q  |     stack   |       w       | Si | Pi |
+|  0 | q0 |.aacbb       |       S       | S0 |  - |
+|  1 | q1 |.aacbb       |       S       | s1 | P1 |
+|  2 | q1 |.aacbb       |       bSa     | s3 |  - |
+|  3 | q1 |a.acbb       |       bS      | s1 | P1 |
+|  4 | q1 |a.acbb       |       bbSa    | s3 |  - |
+|  5 | q1 |aa.cbb       |       bbS     | s2 | P2 |
+|  6 | q1 |aa.cbb       |       bbc     | s5 |  - |
+|  7 | q1 |aac.bb       |       bb      | s4 |  - |
+|  8 | q1 |aacb.b       |       b       | s4 |  - |
+|  9 |  - |aacbb        |       -       |  - |  - |
+
+
+                ARVORE P
+
+                S
+
+        b       S       a
+
+        b       S       a
+
+                c
+
+          1 - aacbb
+        CADEIA ACEITA!
+===========================================================================================================   
+
+| i  | q  |     stack   |       w       | Si | Pi |
+|  0 | q0 |.aaacbbb     |       S       | S0 |  - |
+|  1 | q1 |.aaacbbb     |       S       | s1 | P1 |
+|  2 | q1 |.aaacbbb     |       bSa     | s3 |  - |
+|  3 | q1 |a.aacbbb     |       bS      | s1 | P1 |
+|  4 | q1 |a.aacbbb     |       bbSa    | s3 |  - |
+|  5 | q1 |aa.acbbb     |       bbS     | s1 | P1 |
+|  6 | q1 |aa.acbbb     |       bbbSa   | s3 |  - |
+|  7 | q1 |aaa.cbbb     |       bbbS    | s2 | P2 |
+|  8 | q1 |aaa.cbbb     |       bbbc    | s5 |  - |
+|  9 | q1 |aaac.bbb     |       bbb     | s4 |  - |
+| 10 | q1 |aaacb.bb     |       bb      | s4 |  - |
+| 11 | q1 |aaacbb.b     |       b       | s4 |  - |
+| 12 |  - |aaacbbb      |       -       |  - |  - |
+
+
+                ARVORE P
+
+                S
+
+        b       S       a
+
+        b       S       a
+
+        b       S       a
+
+                c
+
+          2 - aaacbbb
+        CADEIA ACEITA!
+===========================================================================================================   
+
+| i  | q  |     stack   |       w       | Si | Pi |
+|  0 | q0 |     .abc    |       S       | S0 |  - |
+|  1 | q1 |     .abc    |       S       | s1 | P1 |
+|  2 | q1 |     .abc    |       bSa     | s3 |  - |
+          3 - abc
+        CADEIA RECUSADA!
+===========================================================================================================   
+
+| i  | q  |     stack   |       w       | Si | Pi |
+|  0 | q0 |     .acb    |       S       | S0 |  - |
+|  1 | q1 |     .acb    |       S       | s1 | P1 |
+|  2 | q1 |     .acb    |       bSa     | s3 |  - |
+|  3 | q1 |     a.cb    |       bS      | s2 | P2 |
+|  4 | q1 |     a.cb    |       bc      | s5 |  - |
+|  5 | q1 |     ac.b    |       b       | s4 |  - |
+|  6 |  - |     acb     |       -       |  - |  - |
+
+
+                ARVORE P
+
+                S
+
+        b       S       a
+
+                c
+
+          4 - acb
+        CADEIA ACEITA!
+===========================================================================================================   
+
+| i  | q  |     stack   |       w       | Si | Pi |
+|  0 | q0 |.acbb        |       S       | S0 |  - |
+|  1 | q1 |.acbb        |       S       | s1 | P1 |
+|  2 | q1 |.acbb        |       bSa     | s3 |  - |
+|  3 | q1 |a.cbb        |       bS      | s2 | P2 |
+|  4 | q1 |a.cbb        |       bc      | s5 |  - |
+|  5 | q1 |ac.bb        |       b       | s4 |  - |
+          5 - acbb
+        CADEIA RECUSADA!
+===========================================================================================================   
+
+| i  | q  |     stack   |       w       | Si | Pi |
+|  0 | q0 |.aacbb       |       S       | S0 |  - |
+|  1 | q1 |.aacbb       |       S       | s1 | P1 |
+|  2 | q1 |.aacbb       |       bSa     | s3 |  - |
+|  3 | q1 |a.acbb       |       bS      | s1 | P1 |
+|  4 | q1 |a.acbb       |       bbSa    | s3 |  - |
+|  5 | q1 |aa.cbb       |       bbS     | s2 | P2 |
+|  6 | q1 |aa.cbb       |       bbc     | s5 |  - |
+|  7 | q1 |aac.bb       |       bb      | s4 |  - |
+|  8 | q1 |aacb.b       |       b       | s4 |  - |
+|  9 |  - |aacbb        |       -       |  - |  - |
+
+
+                ARVORE P
+
+                S
+
+        b       S       a
+
+        b       S       a
+
+                c
+
+          6 - aacbb
+        CADEIA ACEITA!
+===========================================================================================================   
