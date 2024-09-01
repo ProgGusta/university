@@ -1,3 +1,12 @@
+/*
+    Aluno: Gustavo Barreto dos Santos Costa
+    Matrícula: 202211137
+    Disciplina: Compiladores
+    Professor: Dra. Marta Magda Dornelles Bertoldi
+    Trabalho: Implementação de um Autômato Finito Determinístico (AFD)
+    Data de entrega: 02/09/2024 
+*/
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
