@@ -129,7 +129,7 @@ AFD lerArquivoEntrada(string nomeArquivo)
 
 int main() 
 {
-    AFD afd = lerArquivoEntrada("entrada.txt");
+    AFD afd = lerArquivoEntrada("atrib.txt");
 
     // Mostrar os detalhes do AFD antes de processar a cadeia
     afd.mostrarAFD();
