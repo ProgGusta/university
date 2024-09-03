@@ -1,0 +1,13 @@
+123 - number greater than zero
+-123 - number less than zero
+12 - number greater than zero
+145 - number greater than zero
+1 - number greater than zero
+0 - number equal to zero
+-8 - number less than zero
+-0 - number less than zero
+Gustavo - identifier
+Marta - identifier
+mmggrr - identifier
+= - assignment command
++ - sum operator
